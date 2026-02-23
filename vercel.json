@@ -1,8 +1,14 @@
 {
+  "buildCommand": "echo No build step required",
+  "outputDirectory": ".",
   "rewrites": [
     {
       "source": "/",
       "destination": "/html/index.html"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/html/$1"
     }
   ]
 }
